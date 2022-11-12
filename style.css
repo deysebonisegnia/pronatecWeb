@@ -1,0 +1,99 @@
+:root {
+  --color-text: rgb(168, 168, 168);
+  --color-hover: rgb(26, 147, 218);
+  --color-button: rgb(255, 255, 255);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+}
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+img {
+  display: block;
+  margin: auto;
+  height: 60vh;
+  width: 70vw;
+}
+.pages {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+.page {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  gap: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  width: 30vw;
+  height: 8vh;
+  border-radius: 8px;
+  text-align: center;
+}
+button {
+  width: 15vw;
+  height: 8vh;
+  border: 1px solid var(--color-hover);
+  color: var(--color-hover);
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-hover);
+  color: var(--color-button);
+}
+footer {
+  text-align: center;
+  width: 100vw;
+  padding: 1rem;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  color: var(--color-hover);
+  cursor: pointer;
+}
+/*responsive*/
+
+@media (min-width: 800px) {
+  input {
+    width: 30vw;
+  }
+  button {
+    width: 15vw;
+  }
+}
+@media (min-width: 500px) {
+  input {
+    width: 40vw;
+  }
+  button {
+    width: 20vw;
+  }
+}
+@media (min-width: 1200px) {
+  input {
+    width: 30vw;
+  }
+  button {
+    width: 10vw;
+  }
+}
